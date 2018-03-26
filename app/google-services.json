@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "17409848515",
+    "firebase_url": "https://seniorproject-davychhouk.firebaseio.com",
+    "project_id": "seniorproject-davychhouk",
+    "storage_bucket": "seniorproject-davychhouk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17409848515:android:e5980121c724a477",
+        "android_client_info": {
+          "package_name": "com.davy.chhouk.seseniorproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17409848515-t2qm8iert0leeheo1ugj82vodfom3e72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.davy.chhouk.seseniorproject",
+            "certificate_hash": "b537da51c005dcf45972c9730004ac264adca990"
+          }
+        },
+        {
+          "client_id": "17409848515-71opjl3m96f5lih53f9v7d8kari7sq28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE5w0DTYc9AnfoRSHW6FJQ65c19f_5Up0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17409848515-71opjl3m96f5lih53f9v7d8kari7sq28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
