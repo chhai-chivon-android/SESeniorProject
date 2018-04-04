@@ -1,13 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.davy.chhouk.seseniorproject.MainActivity"
-    android:background="">
+    android:background="@drawable/bg"
+    >
+
+
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Project Name :"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+
+
+        />
+    <Button
+        android:id="@+id/box1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/Text1"/>
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Project Detail :"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_below="@id/box1"
+
+        />
+    <Button
+        android:id="@+id/box2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/Text2"/>
+
+
+    <TextView
+        android:id="@+id/Text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member :"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_below="@id/box2"
+        />
+    <Button
+        android:id="@+id/box3"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Text3"/>
+
+    <TextView
+        android:id="@+id/Text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Advisor :"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_below="@id/box3"
+        />
+    <Button
+        android:id="@+id/box4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/Text4"/>
 
 
 
 
-</android.support.constraint.ConstraintLayout>
+
+
+
+
+</RelativeLayout>

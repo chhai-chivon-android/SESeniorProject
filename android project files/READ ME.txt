@@ -1,0 +1,25 @@
+ANDROID PROJECT MOCKUP
+
+PAGES:
+1. GENERAL INFO - DAIXIN
+2. PROJECT / LOGIN - MYLA
+3. TODO / CALENDAR - PLOY
+4. CREATE PROJECT - BAIFERN
+
+PROGRAM:
+Adobe XD
+Sketch
+Photoshop
+Illustrator
+
+SIZE:
+
+375 x 2216 (4.7 in)
+
+COLOR:
+
+#AC5CE9
+#38D2E3
+#8384E6
+(can also use white, black, and grey)
+
