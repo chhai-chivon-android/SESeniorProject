@@ -29,7 +29,7 @@ public class TabGeneralInfo extends Fragment {
         View rootView = inflater.inflate(R.layout.tab1_general_info, container, false);
 
         projectTitle = rootView.findViewById(R.id.project_title);
-        projectTitle.setText("Project Name Sample".toUpperCase());
+        projectTitle.setText("SE Senior Project".toUpperCase());
 
         description = rootView.findViewById(R.id.description);
         description.setText("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.");
