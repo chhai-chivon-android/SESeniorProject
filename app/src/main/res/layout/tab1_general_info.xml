@@ -66,7 +66,7 @@
             <ListView
                 android:id="@+id/dates"
                 android:layout_width="match_parent"
-                android:layout_height="275dp"></ListView>
+                android:layout_height="275dp" />
         </LinearLayout>
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
