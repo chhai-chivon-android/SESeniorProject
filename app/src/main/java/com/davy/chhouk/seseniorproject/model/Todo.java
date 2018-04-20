@@ -1,5 +1,6 @@
 package com.davy.chhouk.seseniorproject.model;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Todo {
@@ -25,8 +26,18 @@ public class Todo {
         return dateTime;
     }
 
-    public Long getMilli() {
-        return dateTime.getTime();
+    public long getMillis() {
+        String myDate = getDateTime().getYear() + "/" + getDateTime().getMonth() + "/" + getDateTime().getDate() + " " + getDateTime().getHours() + ":" + getDateTime().getMinutes() +
+                ":" + getDateTime().getSeconds();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Date date = getDateTime();
+        try {
+            date = sdf.parse(myDate);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        long millis = date.getTime();
+        return millis;
     }
 
     public void setDateTime(Date dateTime) {
