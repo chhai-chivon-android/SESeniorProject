@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:padding="10dp"
     tools:context=".AddTODOActivity">
 
@@ -35,7 +36,8 @@
             android:id="@+id/et_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            tools:ignore="LabelFor" />
     </LinearLayout>
 
     <LinearLayout
@@ -51,14 +53,15 @@
             android:id="@+id/lbl_by"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Who: "
+            android:text="@string/who"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/et_mr1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            tools:ignore="LabelFor" />
     </LinearLayout>
 
     <LinearLayout
@@ -74,8 +77,9 @@
             android:id="@+id/et_mr2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:inputType="text" />
+            android:layout_marginStart="40dp"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
     </LinearLayout>
 
     <LinearLayout
@@ -101,7 +105,8 @@
             android:gravity="center"
             android:paddingStart="40dp"
             android:text="@string/day_month_year"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:id="@+id/time"
@@ -110,7 +115,8 @@
             android:gravity="center"
             android:paddingStart="10dp"
             android:text="@string/time"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
 
     </LinearLayout>
 
@@ -127,14 +133,15 @@
             android:id="@+id/datepicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pick_date" />
+            android:text="@string/pick_date"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/timepicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/pick_time" />
-
+            android:text="@string/pick_time"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
     <LinearLayout
@@ -150,7 +157,6 @@
             android:layout_height="wrap_content"
             android:onClick="addTodo"
             android:text="@string/add" />
-
     </LinearLayout>
 
 </RelativeLayout>

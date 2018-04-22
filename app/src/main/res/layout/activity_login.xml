@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/open_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="@string/open_project"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/title_open_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open_project"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/lbl_title_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_id_text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_title_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pass_open_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_open_container"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/lbl_pass_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pass_phrase"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_pass_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/openButton"
+        android:layout_below="@id/pass_open_container"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/open"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/createTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/openButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autoLink="none"
+        android:clickable="true"
+        android:text="@string/create_a_new_project"
+        android:textColor="#0000ff"
+        android:focusable="true"
+        android:onClick="openCreate"/>
+
+</RelativeLayout>

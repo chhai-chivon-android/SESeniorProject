@@ -1,5 +1,7 @@
 package com.davy.chhouk.seseniorproject.model;
 
+import android.annotation.SuppressLint;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -32,15 +34,14 @@ public class Todo {
     public long getMillis() {
         String myDate = getDateTime().getYear() + "/" + getDateTime().getMonth() + "/" + getDateTime().getDate() + " " + getDateTime().getHours() + ":" + getDateTime().getMinutes() +
                 ":" + getDateTime().getSeconds();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = getDateTime();
         try {
             date = sdf.parse(myDate);
         } catch (Exception e) {
             System.out.println(e);
         }
-        long millis = date.getTime();
-        return millis;
+        return date.getTime();
     }
 
     public void setDateTime(Date dateTime) {
@@ -55,7 +56,9 @@ public class Todo {
         this.who = who;
     }
 
+    @SuppressLint("DefaultLocale")
     public String getStringTodo() {
-        return title + " " + dateTime.getDate() + "/" + dateTime.getMonth() + "/" + dateTime.getYear() + " " + dateTime.getHours() + ":" + dateTime.getMinutes() + " " + who;
+        return title + " " + String.format("%02d", dateTime.getDate()) + "/" + String.format("%02d", dateTime.getMonth()) + "/" + dateTime.getYear()
+                + " " + String.format("%02d", dateTime.getHours()) + ":" + String.format("%02d", dateTime.getMinutes()) + " by " + who;
     }
 }
