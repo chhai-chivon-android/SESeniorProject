@@ -46,5 +46,6 @@
     <string name="project_id_text">Project ID</string>
     <string name="pass_phrase">Pass Phrase</string>
     <string name="create_a_new_project">Create a New Project</string>
+    <string name="se_senior_project">SE Senior Project</string>
 
 </resources>
