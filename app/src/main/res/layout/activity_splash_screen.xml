@@ -17,7 +17,6 @@
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-
-        />
+        android:contentDescription="@string/se_senior_project" />
 
 </android.support.design.widget.CoordinatorLayout>

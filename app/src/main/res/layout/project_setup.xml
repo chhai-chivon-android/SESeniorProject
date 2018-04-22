@@ -38,7 +38,8 @@
             android:layout_height="37dp"
             android:layout_marginLeft="25dp"
             android:background="@drawable/edit_text_style"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            android:inputType="text"/>
 
         <TextView
             android:id="@+id/project_detail_label"
@@ -58,7 +59,8 @@
             android:layout_height="52dp"
             android:layout_marginLeft="25dp"
             android:background="@drawable/edit_text_style"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            android:inputType="text" />
 
         <TextView
             android:id="@+id/member_label"
@@ -78,7 +80,8 @@
             android:layout_height="108dp"
             android:layout_marginLeft="25dp"
             android:background="@drawable/edit_text_style"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            android:inputType="text" />
 
         <TextView
             android:id="@+id/advisor_label"
@@ -99,7 +102,7 @@
             android:layout_marginLeft="25dp"
             android:background="@drawable/edit_text_style"
             android:textColor="#ffffff"
-            />
+            android:inputType="text" />
 
 
 
