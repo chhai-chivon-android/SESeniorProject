@@ -8,6 +8,9 @@ public class Todo {
     private Date dateTime;
     private String who;
 
+    public Todo() {
+    }
+
     public Todo(String title, Date dateTime, String who) {
         this.title = title;
         this.dateTime = dateTime;
