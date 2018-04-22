@@ -1,108 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg">
 
 
-    <TextView
-        android:id="@+id/project_name_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Project Name :"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
-        />
-
-    <EditText
-        android:id="@+id/project_name_input"
-        android:layout_width="288dp"
-        android:layout_height="37dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/edit_text_style"
-        android:textColor="#ffffff" />
-
-    <TextView
-        android:id="@+id/project_detail_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Project Detail :"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        />
-
-    <EditText
-        android:id="@+id/project_detail_input"
-        android:layout_width="288dp"
-        android:layout_height="52dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/edit_text_style"
-        android:textColor="#ffffff" />
-
-    <TextView
-        android:id="@+id/member_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Member :"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        />
-
-    <EditText
-        android:id="@+id/member_input"
-        android:layout_width="288dp"
-        android:layout_height="108dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/edit_text_style"
-        android:textColor="#ffffff" />
-
-    <TextView
-        android:id="@+id/advisor_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Advisor :"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        />
-
-    <EditText
-        android:id="@+id/advisor_input"
-        android:layout_width="288dp"
-        android:layout_height="37dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/edit_text_style"
-        android:textColor="#ffffff" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_gravity="center"
-        android:background="#ffffff"
-        android:layout_marginTop="10dp"
-        android:text="create"
-        android:textColor="#42b8df" />
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/translucent_box"
+        android:orientation="vertical"
+        app:corner_radius="40dp">
 
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/project_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif"
+            android:text="Project Name :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/project_name_input"
+            android:layout_width="288dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/project_detail_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="Project Detail :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/project_detail_input"
+            android:layout_width="288dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/member_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="Member :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/member_input"
+            android:layout_width="288dp"
+            android:layout_height="108dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/advisor_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="Advisor :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/advisor_input"
+            android:layout_width="288dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:text="create"
+            android:textColor="#42b8df" />
+
+
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+</RelativeLayout>
