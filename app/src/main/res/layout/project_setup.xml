@@ -10,13 +10,14 @@
     <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="35dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:layout_marginTop="35dp"
         android:background="@color/translucent_box"
         android:orientation="vertical"
-        app:corner_radius="40dp">
+        app:corner_radius="30dp"
+        >
 
 
         <TextView
@@ -24,8 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
             android:fontFamily="sans-serif"
             android:text="Project Name :"
             android:textColor="#FFFFFF"
@@ -35,7 +36,7 @@
             android:id="@+id/project_name_input"
             android:layout_width="288dp"
             android:layout_height="37dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:background="@drawable/edit_text_style"
             android:textColor="#ffffff" />
 
@@ -44,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="5dp"
             android:fontFamily="sans-serif"
             android:text="Project Detail :"
@@ -55,7 +56,7 @@
             android:id="@+id/project_detail_input"
             android:layout_width="288dp"
             android:layout_height="52dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:background="@drawable/edit_text_style"
             android:textColor="#ffffff" />
 
@@ -64,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="5dp"
             android:fontFamily="sans-serif"
             android:text="Member :"
@@ -75,7 +76,7 @@
             android:id="@+id/member_input"
             android:layout_width="288dp"
             android:layout_height="108dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:background="@drawable/edit_text_style"
             android:textColor="#ffffff" />
 
@@ -84,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="5dp"
             android:fontFamily="sans-serif"
             android:text="Advisor :"
@@ -95,20 +96,25 @@
             android:id="@+id/advisor_input"
             android:layout_width="288dp"
             android:layout_height="37dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:background="@drawable/edit_text_style"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="#ffffff"
-            android:text="create"
-            android:textColor="#42b8df" />
+
 
 
     </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_button"
+        android:text="create"
+        android:textColor="#42b8df" />
 
 </RelativeLayout>
