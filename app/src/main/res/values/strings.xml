@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">SE Senior Project</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">SE Senior Project</string>
     <string name="tab_text_1">General</string>
     <string name="tab_text_2">Project</string>
     <string name="tab_text_3">TODO</string>
