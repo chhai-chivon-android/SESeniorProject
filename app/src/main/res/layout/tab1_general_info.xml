@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        >
 
         <TextView
             android:id="@+id/project_title"
@@ -28,7 +29,8 @@
             android:textAllCaps="true"
             android:textColor="@android:color/white"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +43,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/description"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
 
             <TextView
                 android:id="@+id/description"
@@ -62,7 +65,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/important_dates"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
 
             <ListView
                 android:id="@+id/dates"
