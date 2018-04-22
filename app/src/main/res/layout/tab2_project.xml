@@ -26,7 +26,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/project_name"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/project_name"
@@ -36,7 +38,8 @@
             android:layout_marginTop="5dp"
             android:text="@string/sample_project_name"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/lbl_details"
@@ -45,7 +48,9 @@
             android:layout_below="@id/project_name"
             android:layout_marginTop="10dp"
             android:text="@string/details_lbl"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/project_details"
@@ -54,7 +59,8 @@
             android:layout_below="@id/lbl_details"
             android:layout_marginTop="5dp"
             android:text="@string/details"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            />
 
         <TextView
             android:id="@+id/lbl_member"
@@ -63,7 +69,9 @@
             android:layout_below="@id/project_details"
             android:layout_marginTop="10dp"
             android:text="@string/member_lbl"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/member1"
@@ -81,7 +89,8 @@
             android:layout_below="@id/member1"
             android:text="@string/mr_member_2"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/lbl_adviser"
@@ -90,7 +99,9 @@
             android:layout_below="@id/member2"
             android:layout_marginTop="10dp"
             android:text="@string/adviser_lbl"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
