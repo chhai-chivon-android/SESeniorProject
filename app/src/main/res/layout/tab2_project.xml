@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/projectLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:padding="0dp">
 
-    <RelativeLayout
+    <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_margin="25dp"
+        app:corner_radius="15dp"
+        android:background="@color/translucent_box"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/edit_button"
@@ -18,8 +23,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
+            android:background="@drawable/rounded_button"
             android:text="@string/edit"
-            tools:ignore="RelativeOverlap" />
+            tools:ignore="RelativeOverlap"
+            android:textColor="#42b8df"/>
 
         <TextView
             android:id="@+id/lbl_name"
@@ -39,6 +46,18 @@
             android:text="@string/sample_project_name"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        app:corner_radius="15dp"
+        android:background="@color/translucent_box"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/lbl_details"
@@ -113,10 +132,16 @@
             android:id="@+id/switch_project"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/lbl_adviserName"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:text="@string/switch_project" />
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:padding="10dp"
+            android:text="@string/switch_project"
+            android:textColor="#42b8df"/>
 
-    </RelativeLayout>
-</ScrollView>
+    </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+
+
+</RelativeLayout>

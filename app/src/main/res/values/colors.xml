@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="translucent_box">#5ca6a6a6</color>
+    <color name="translucent_box">#32ffffff</color>
     <color name="btColor">#FFFFFF</color>
     <color name="start">#8F47DB</color>
     <color name="mid">#7265d5</color>
