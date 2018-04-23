@@ -3,16 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg"
     android:padding="0dp">
 
-    <LinearLayout
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="60dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="35dp"
+        app:corner_radius="15dp"
         android:background="@color/translucent_box"
         android:orientation="vertical">
 
@@ -129,7 +131,7 @@
             android:inputType="text"
             android:textColor="#ffffff"
             tools:ignore="LabelFor" />
-    </LinearLayout>
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
 
     <Button
         android:id="@+id/btn_save"
